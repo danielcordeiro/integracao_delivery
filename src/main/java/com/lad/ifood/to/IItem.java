@@ -32,6 +32,9 @@ public class IItem implements Serializable {
 	@SerializedName("subItems")
 	private List<ISubItem> subItems;
 	
+	@SerializedName("observations")
+	private String observations;
+	
 	private Long idProduto;
 
 	public String getName() {
@@ -104,6 +107,14 @@ public class IItem implements Serializable {
 
 	public void setIdProduto(Long idProduto) {
 		this.idProduto = idProduto;
+	}
+
+	public String getObservations() {
+		return observations;
+	}
+
+	public void setObservations(String observations) {
+		this.observations = observations;
 	}
 
 }

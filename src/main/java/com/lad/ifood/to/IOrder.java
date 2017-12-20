@@ -193,4 +193,5 @@ public class IOrder implements Serializable {
 	public void setCustomer(ICustomer customer) {
 		this.customer = customer;
 	}
+
 }

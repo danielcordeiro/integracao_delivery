@@ -19,6 +19,9 @@ public class ICustomer implements Serializable {
 	@SerializedName("email")
 	private String email;
 
+	@SerializedName("taxPayerIdentificationNumber")
+	private String taxPayerIdentificationNumber;
+
 	public String getId() {
 		return id;
 	}
@@ -49,6 +52,14 @@ public class ICustomer implements Serializable {
 
 	public void setEmail(String email) {
 		this.email = email;
+	}
+
+	public String getTaxPayerIdentificationNumber() {
+		return taxPayerIdentificationNumber;
+	}
+
+	public void setTaxPayerIdentificationNumber(String taxPayerIdentificationNumber) {
+		this.taxPayerIdentificationNumber = taxPayerIdentificationNumber;
 	}
 
 }
