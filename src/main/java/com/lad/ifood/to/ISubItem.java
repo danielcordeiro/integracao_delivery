@@ -22,6 +22,13 @@ public class ISubItem implements Serializable {
 	@SerializedName("discount")
 	private Float discount;
 
+	@SerializedName("externalCode")
+	private String externalCode;
+
+	private Long idPdv;
+
+	private boolean configuracaoEncontrada;
+
 	public String getName() {
 		return name;
 	}
@@ -60,6 +67,30 @@ public class ISubItem implements Serializable {
 
 	public void setDiscount(Float discount) {
 		this.discount = discount;
+	}
+
+	public Long getIdPdv() {
+		return idPdv;
+	}
+
+	public void setIdPdv(Long idPdv) {
+		this.idPdv = idPdv;
+	}
+
+	public String getExternalCode() {
+		return externalCode;
+	}
+
+	public void setExternalCode(String externalCode) {
+		this.externalCode = externalCode;
+	}
+
+	public boolean isConfiguracaoEncontrada() {
+		return configuracaoEncontrada;
+	}
+
+	public void setConfiguracaoEncontrada(boolean configuracaoEncontrada) {
+		this.configuracaoEncontrada = configuracaoEncontrada;
 	}
 
 }
