@@ -54,6 +54,9 @@ public class IOrder implements Serializable {
 	@SerializedName("deliveryDateTime")
 	private String deliveryDateTime;
 
+	@SerializedName("localizer")
+	private ILocalizer localizer;
+
 	private Date deliveryDateTimeDate;
 
 	public IOrder() {
@@ -192,6 +195,14 @@ public class IOrder implements Serializable {
 
 	public void setCustomer(ICustomer customer) {
 		this.customer = customer;
+	}
+
+	public ILocalizer getLocalizer() {
+		return localizer;
+	}
+
+	public void setLocalizer(ILocalizer localizer) {
+		this.localizer = localizer;
 	}
 
 }
